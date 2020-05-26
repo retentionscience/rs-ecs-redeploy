@@ -10,6 +10,9 @@ inputs:
   cluster:
     description: "The name of an ECS cluster."
     required: true
+  wait-for-minutes:
+    description: "How long to wait for the deploy to become stable again. (default 30)"
+    required: false
 outputs:
   status:
     description: "Return status of ECS update command"

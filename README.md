@@ -18,8 +18,8 @@ Redeploys a service in an ECS cluster
         id: update-service
         uses: retentionscience/rs-ecs-redeploy
         with:
-          serviceName: 'stg-rate-limit-service',
-          clusterName: 'common-cluster'
+          service: 'stg-rate-limit-service',
+          cluster: 'common-cluster'
 
 ```
 
