@@ -29,8 +29,8 @@ describe("Rdeploy ECS", () => {
   test("Redeploy stg-rs-wordpress", async () => {
     await run();
     expect(mockEcsUpdateService).toHaveBeenNthCalledWith(1, {
-      clusterName: "common-cluster",
-      serviceName: "rs-stg-wordpress",
+      cluster: "common-cluster",
+      service: "rs-stg-wordpress",
     });
   });
 });

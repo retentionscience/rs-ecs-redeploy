@@ -6,8 +6,8 @@ const WAIT_DEFAULT_DELAY_SEC = 15;
 
 async function run() {
   try {
-    const serviceName = core.getInput("serviceName", { required: true });
-    const clusterName = core.getInput("clusterName", { required: true });
+    const serviceName = core.getInput("service", { required: true });
+    const clusterName = core.getInput("cluster", { required: true });
 
     let waitForMinutes =
       parseInt(core.getInput("wait-for-minutes", { required: false })) || 30;
