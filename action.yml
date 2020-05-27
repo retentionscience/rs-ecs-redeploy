@@ -5,8 +5,8 @@ branding:
   color: "orange"
 inputs:
   service:
-    description: "The name of an ECS service."
-    required: true
+    description: "The name of an ECS service. (default: taken from $GITHUB_REPOSITORY)"
+    required: false
   cluster:
     description: "The name of an ECS cluster. (default: common-cluster)"
     required: false
