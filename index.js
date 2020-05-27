@@ -11,7 +11,7 @@ async function run() {
       core.getInput("cluster", { required: false }) || "common-cluster";
 
     if (serviceName == "") {
-       serviceName=process.env.GITHUB_REPOSITORY.split('/')[1];
+       serviceName=process.env.ENV+"-"+process.env.GITHUB_REPOSITORY.split('/')[1];
     }
     let waitForMinutes =
       parseInt(core.getInput("wait-for-minutes", { required: false })) || 30;
