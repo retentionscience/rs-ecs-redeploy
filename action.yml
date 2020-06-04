@@ -1,4 +1,4 @@
-name: "Retention Science ECS Redploy Action for GitHub Actions"
+name: "Retention Science ECS Redeploy Action for GitHub Actions"
 description: "Forces redeployment for the given ECS service"
 branding:
   icon: "cloud"
